@@ -1,0 +1,139 @@
+const
+{ mathematics }
+  uc_e           : extended = 2.718281828459045235360;
+  uc_etom1       : extended = 0.367879441171442321596;
+  uc_lg2         : extended = 0.301029995663981195214;
+  uc_lg5         : extended = 0.698970004336018804803;
+  uc_lge         : extended = 0.434294481903251827651;
+  uc_lgPi        : extended = 0.497149872694133854351;
+  uc_ln10        : extended = 2.302585092994045684018;
+  uc_ln2         : extended = 0.693147180559945309417;
+  uc_lnPi        : extended = 1.144729885849400174143;
+  uc_PiH         : extended = 1.570796326794896619231;
+  uc_PiSqr       : extended = 9.869604401089358618834;
+  uc_Pitom1      : extended = 0.318309886183790671538;
+  uc_sqrt2       : extended = 1.414213562373095048801;
+  uc_sqrt2pi     : extended = 2.506628274631000502416;
+  uc_sqrt2pitom1 : extended = 0.3989422804014326779399;
+  uc_GoldenR     : extended = 1.618033988749894848204;
+
+
+{ physics }
+  uc_Angstrom                 = 1e-10;                //   m
+  uc_AtomicMass               = 1.66053873e-27;       //   kg
+  uc_AtomicMass_Energy        = 1.49241778e-10;       //   J
+  uc_Boltzmann                = 1.3806503e-23;        //   kg m^2 / k s^2
+  uc_Boltzmann_eVK            = 8.617342e-5;          //   eV K-1
+  uc_Bar                      = 1e5;                  //   kg / m s^2
+  uc_Barn                     = 1e-28;                //   m^2
+  uc_Curie                    = 3.7e10;               //   1 / s
+  uc_Dyne                     = 1e-5;                 //   kg m / s^2
+  uc_Erg                      = 1e-7;                 //   kg m^2 / s^2
+  uc_Gauss                    = 1e-4;                 //   kg / a s^2
+  uc_GramForce                = 9.80665e-3;           //   kg m / s^2
+  uc_InchMercury              = 3.38638815789e3;      //   kg / m s^2
+  uc_InchWater                = 2.490889e2;           //   kg / m s^2
+  uc_Joule                    = 1e0;                  //   kg m^2 / s^2
+  uc_Lambert                  = 1e4;                  //   cd sr / m^2
+  uc_Lumen                    = 1e0;                  //   cd sr
+  uc_Lux                      = 1e0;                  //   cd sr / m^2
+  uc_MassElectron             = 9.10938188e-31;       //   kg
+  uc_MassMuon                 = 1.88353109e-28;       //   kg
+  uc_MassNeutron              = 1.67492716e-27;       //   kg
+  uc_MassProton               = 1.67262158e-27;       //   kg
+  uc_Newton                   = 1e0;                  //   kg m / s^2
+  uc_Phot                     = 1e4;                  //   cd sr / m^2
+  uc_PlanckH                  = 6.62606876e-34;       //   J s (kg m^2 / s)
+  uc_PlanckHBar               = 1.054571596e-34;      //   J s (kg m^2 / s)
+  uc_PlanckH_eVs              = 4.13566727e-15;       //   eV s
+  uc_PlanckHBar_eVs           = 6.58211889e-16;       //   eV s
+  uc_PlanckLength             = 1.6160e-35;           //   m
+  uc_PlanckMass               = 2.1767e-8;            //   kg
+  uc_PlanckTime               = 5.3906e-44;           //   s
+  uc_SpeedLight               = 2.99792458e8;         //   m / s
+  uc_Poise                    = 1e-1;                 //   kg m^-1 s^-1
+  uc_ProtonMagneticMoment     = 1.410606633e-26;      //   A m^2
+  uc_Rad                      = 1e-2;                 //   m^2 / s^2
+  uc_Roentgen                 = 2.58e-4;              //   a s / kg
+  uc_Stilb                    = 1e4;                  //   cd / m^2
+  uc_Stokes                   = 1e-4;                 //   m^2 / s
+  uc_Torr                     = 1.33322368421e2;      //   kg / m s^2
+
+{ electromagnetism }
+  uc_BohrMagneton             = 9.27400899e-24;       //   J/T ( A m^2 )
+  uc_BohrMagneton_eVT         = 5.788381749e-5;       //   eV/T
+  uc_ConductanceQuantum       = 7.748091696e-5;       //   S
+  uc_ElectronCharge           = 1.602176462e-19;      //   A s
+  uc_Faraday                  = 9.6485341472e4;       //   A s / mol
+  uc_JosephsonConstant        = 483597.898e9;         //   Hz V^-1
+  uc_MagneticFluxQuantum      = 2.067833636e-15;      //   Wb
+  uc_NuclearMagneton          = 5.05078317e-27;       //   J T^-1 ( A m^2 )
+  uc_NuclearMagneton_eVT      = 3.152451238e-8;       //   eV T^-1
+  uc_ElectronMagneticMoment   = 9.28476362e-24;       //   A m^2
+  uc_VacuumImpedance          = 376.730313461;        //   Ohm
+  uc_VacuumPermeability       = 1.25663706144e-6;     //   N A^-2  (kg m / a^2 s^2)
+  uc_VacuumPermittivity       = 8.854187817e-12;      //   F m^-1  (a^2 s^4 / kg m^3)
+
+{ astronomy }
+  uc_AstronomicalUnit         = 1.49597870691e11;     //   m
+  uc_GravEarthAccel           = 9.80665e0;            //   m / s^2
+  uc_EarthRadius              = 6378000;              //   m, mean radius of earth
+  uc_GravitationalConstant    = 6.673e-11;            //   m^3 / kg s^2
+  uc_LightYear                = 9.46053620707e15;     //   m
+  uc_Parsec                   = 3.08567758135e16;     //   m
+  uc_SolarMass                = 1.98892e30;           //   kg
+
+{ chemistry }
+  uc_AlphaPartMass            = 6.64465598e-27;       //   kg
+  uc_AlphaPartMassEnergyJ     = 5.97191897e-10;       //   J
+  uc_AlphaPartMassEnergyMeV   = 3727.37904;           //   MeV
+  uc_Avogadro                 = 6.02214199e23;        //   mol^-1
+  uc_BohrRadius               = 5.291772083e-11;      //   m
+  uc_MolarGas                 = 8.314472e0;           //   kg m^2 / k mol s^2
+  uc_StandardGasVolume        = 2.2710981e-2;         //   m^3 / mol
+
+{ varia }
+  uc_Btu                      = 1.05505585262e3;      //   kg m^2 / s^2
+  uc_Calorie                  = 4.1868e0;             //   kg m^2 / s^2
+  uc_CanadianGallon           = 4.54609e-3;           //   m^3
+  uc_Carat                    = 2e-4;                 //   kg
+  uc_Cup                      = 2.36588236501e-4;     //   m^3
+  uc_Day                      = 8.64e4;               //   s
+  uc_Fathom                   = 1.8288e0;             //   m
+  uc_FluidOunce               = 2.95735295626e-5;     //   m^3
+  uc_Foot                     = 3.048e-1;             //   m
+  uc_Footcandle               = 1.076e1;              //   cd sr / m^2
+  uc_Footlambert              = 1.07639104e1;         //   cd sr / m^2
+  uc_Hectare                  = 1e4;                  //   m^2
+  uc_Horsepower               = 7.457e2;              //   kg m^2 / s^3
+  uc_Hour                     = 3.6e3;                //   s
+  uc_Inch                     = 2.54e-2;              //   m
+  uc_KmH                      = 2.77777777778e-1;     //   m / s
+  uc_KilopoundForce           = 4.44822161526e3;      //   kg m / s^2
+  uc_Knot                     = 5.14444444444e-1;     //   m / s
+  uc_Liter                    = 1e-3;                 //   m^3
+  uc_mmHg                     = 1.33322368421e2;      //   kg / m s^2
+  uc_MetricTon                = 1e3;                  //   kg
+  uc_Micron                   = 1e-6;                 //   m
+  uc_Mil                      = 2.54e-5;              //   m
+  uc_Mile                     = 1.609344e3;           //   m
+  uc_MilesPerHour             = 4.4704e-1;            //   m / s
+  uc_Minute                   = 6e1;                  //   s
+  uc_NauticalMile             = 1.852e3;              //   m
+  uc_OunceMass                = 2.8349523125e-2;      //   kg
+  uc_Pint                     = 4.73176473002e-4;     //   m^3
+  uc_Point                    = 3.52777777778e-4;     //   m
+  uc_PoundForce               = 4.44822161526e0;      //   kg m / s^2
+  uc_PoundMass                = 4.5359237e-1;         //   kg
+  uc_Poundal                  = 1.38255e-1;           //   kg m / s^2
+  uc_Psi                      = 6.89475729317e3;      //   kg / m s^2
+  uc_Quart                    = 9.46352946004e-4;     //   m^3
+  uc_StdAtmosphere            = 1.01325e5;            //   kg / m s^2
+  uc_Texpoint                 = 3.51459803515e-4;     //   m
+  uc_Therm                    = 1.05506e8;            //   kg m^2 / s^2
+  uc_TroyOunce                = 3.1103475e-2;         //   kg
+  uc_UkGallon                 = 4.546092e-3;          //   m^3
+  uc_UkTon                    = 1.0160469088e3;       //   kg
+  uc_USGallon                 = 3.78541178402e-3;     //   m^3
+  uc_Week                     = 6.048e5;              //   s
+  uc_Yard                     = 9.144e-1;             //   m
